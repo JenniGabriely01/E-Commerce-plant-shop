@@ -1,7 +1,7 @@
-import logo from '../assets/logo.svg'
-import search from '../assets/search.svg'
-import cart from '../assets/cart.svg'
-import person from '../assets/person.svg'
+import logo from '../assets/icones/logo.svg'
+import search from '../assets/icones/search.svg'
+import cart from '../assets/icones/cart.svg'
+import person from '../assets/icones/person.svg'
 import { Link } from 'react-router-dom';
 
 export function Header() {
@@ -11,14 +11,14 @@ export function Header() {
                 <img className="mr-12" src={logo} alt="logo" />
 
                 <ul className="flex">
-                    <li className="mr-12 text-[#8F8F8F]">
-                        <Link to="/">Home</Link>
+                    <li className="mr-12 text-gray-700">
+                        <Link className="font-medium" to="/">Home</Link>
                     </li>
                     <li className="mr-12 text-[#8F8F8F]">
-                        <Link>Products</Link>
+                        <Link className="font-medium">Products</Link>
                     </li>
                     <li className="mr-12 text-[#8F8F8F]">
-                        <Link>Contacts</Link>
+                        <Link className="font-medium">Contacts</Link>
                     </li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@ export function Header() {
                 </div>
 
                 <img src={cart} alt="icon cart" className="mr-12" />
-                <Link>
+                <Link to="/login">
                     <img src={person} alt="icon person" />
                 </Link>
             </div>
