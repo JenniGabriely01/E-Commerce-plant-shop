@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export function Header() {
     return (
-        <header className="flex items-center justify-between w-full py-11 px-24 header-container">
+        <header className="flex items-center justify-between w-full py-11 px-24 header-container max-w-screen-2xl m-auto">
             <div className="flex">
                 <img className="mr-12" src={logo} alt="logo" />
 
