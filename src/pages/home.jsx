@@ -14,6 +14,7 @@ import carrossel1 from '../assets/imagens/carrosel1.png';
 import carrossel2 from '../assets/imagens/carrosel2.png';
 import carrossel3 from '../assets/imagens/carrosel3.png';
 import Carrosel from '../components/carrosel'
+import Footer from '../components/footer'
 
 export function Home() {
 
