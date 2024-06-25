@@ -10,8 +10,17 @@ import categoriePlant2 from '../assets/imagens/categories-plant2.png'
 import categoriePlant3 from '../assets/imagens/categories-plant3.png'
 import { CardAbout } from '../components/cardAbout'
 import { CardProduct } from '../components/cardProduct'
+import carrossel1 from '../assets/imagens/carrosel1.png';
+import carrossel2 from '../assets/imagens/carrosel2.png';
+import carrossel3 from '../assets/imagens/carrosel3.png';
+import Carrosel from '../components/carrosel'
 
 export function Home() {
+
+    let slides = [
+        carrossel1, carrossel2, carrossel3
+    ];
+
     return (
         <>
             <main className="max-w-screen-2xl m-auto">
@@ -101,12 +110,16 @@ export function Home() {
                                     TitleProd="Artificial Plants"
                                 />
                             </div>
-
-
                         </div>
-
                     </div>
+                </section>
 
+                <section className="py-11 px-24">
+                    <h2 className="text-3xl font-black mb-12">What customers say about <br /> GREEMIND?</h2>
+
+                    <div className="w-[60%]">
+                        <Carrosel slides={slides} />
+                    </div>
                 </section>
             </main>
 
